@@ -13,7 +13,7 @@ A cozy, non-violent 2D farming and life simulation RPG where you escape the busy
 
 1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/coderekamplayo/Sprout-Valley-Land-GoN.git
+    git clone https://github.com/coderekamplayo/GuardianofNature.git
     ```
 
 2.  **Open the project in Godot 4.4.**
