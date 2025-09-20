@@ -1,6 +1,6 @@
-# Sprout Valley Land: Guardian of Nature
+#  Guardian of Nature:
 
-A cozy, non-violent 2D RPG where players restore a polluted valley through farming, crafting, and cleaning. Built with Godot 4.4 and the Sunnyside pixel art asset pack.
+A cozy, non-violent 2D RPG where players restore a polluted valley through farming, crafting, and cleaning. Built with Godot 4.4 and the Sprout Valley pixel art asset pack.
 
 ## Features
 - **Farming & Reforestation**: Till soil, plant crops, chop stumps, and grow trees.
