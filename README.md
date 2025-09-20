@@ -1,18 +1,25 @@
-#  Guardian of Nature:
+# Guardian of Nature
 
-A cozy, non-violent 2D RPG where players restore a polluted valley through farming, crafting, and cleaning. Built with Godot 4.4 and the Sprout Valley pixel art asset pack.
+A cozy, non-violent 2D farming and life simulation RPG where you escape the busy city to build the garden of your dreams. This project is built with Godot 4.4 and the Sprout Valley pixel art asset pack.
 
 ## Features
-- **Farming & Reforestation**: Till soil, plant crops, chop stumps, and grow trees.
-- **Cleaning & Debris Removal**: Break debris to collect scrap and heal the land.
-- **Building & Wildlife Habitats**: Craft items (fences, coops) to attract animals.
-- **Stealth Gameplay**: Avoid goblins/skeletons using non-lethal tools (smoke bombs, traps).
+
+*   **Grow Your Dream Garden:** Till the soil, plant a variety of seeds, water your crops, and harvest your produce through the changing seasons.
+*   **Gather & Craft:** Explore the valley to gather resources like wood and stone. Use them to craft tools, furniture, and decorations for your farm and home.
+*   **Build & Customize Your Home:** Design the farm you've always wanted. Build fences, craft furniture, and decorate your house to make it a cozy home.
+*   **Explore & Befriend:** Discover new areas and secrets hidden throughout the valley. Meet and get to know the friendly residents of the town, each with their own stories.
 
 ## Getting Started
-1. Clone the repository:  
-   `git clone https://github.com/YOUR_USERNAME/Sprout-Valley-Land-GoN.git`
-2. Open the project in Godot 4.4.
-3. Run the game via the editor or export a build.
+
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/coderekamplayo/Sprout-Valley-Land-GoN.git
+    ```
+
+2.  **Open the project in Godot 4.4.**
+
+3.  **Run the game via the editor or export a build.**
 
 ## Contributing
+
 Feel free to fork and submit pull requests! Contributions are welcome for bug fixes, new features, or documentation improvements.
