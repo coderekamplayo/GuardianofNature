@@ -18,11 +18,13 @@ var node_states : Dictionary = {}
 var current_node_state : NodeState
 # A variable to store the name of the current state as a string for easy access/debugging.
 var current_node_state_name : String
+var parent_node_name: String
 
 
 # The _ready function is called once when the node and all its children enter the scene tree.
 # This is where we will set up the state machine.
 func _ready() -> void:
+	parent_node_name = get_parent().name
 	# Loop through all the nodes that are direct children of this state machine node.
 	for child in get_children():
 		# Check if the child is a "NodeState". This is how the machine discovers all its possible states.
@@ -42,6 +44,7 @@ func _ready() -> void:
 		initial_node_state._on_enter()
 		# Set the machine's current state to the initial one.
 		current_node_state = initial_node_state
+		current_node_state_name = current_node_state.name.to_lower()
 
 
 # The _process function is called on every rendered frame.
@@ -64,6 +67,7 @@ func _physics_process(delta: float) -> void:
 		# This calls a function on the state, likely to check if any conditions
 		# have been met to transition to another state.
 		current_node_state._on_next_transitions()
+		print(parent_node_name, " Current State: ", current_node_state_name)
 
 
 # This function handles the actual process of changing from one state to another.
