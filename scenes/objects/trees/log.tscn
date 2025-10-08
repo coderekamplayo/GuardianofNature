@@ -14,6 +14,7 @@ radius = 8.0
 texture = SubResource("AtlasTexture_e2a05")
 
 [node name="CollectableComponent" parent="." instance=ExtResource("2_e2a05")]
+y_sort_enabled = true
 collectable_name = "log"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CollectableComponent"]
