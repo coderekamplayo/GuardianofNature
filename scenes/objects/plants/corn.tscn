@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://bmca7rc5oxcqs"]
+[gd_scene load_steps=11 format=3 uid="uid://bmca7rc5oxcqs"]
 
 [ext_resource type="Script" uid="uid://77id88knfalv" path="res://scenes/objects/plants/corn.gd" id="1_hgaca"]
 [ext_resource type="Texture2D" uid="uid://bugjlbn0v4ik4" path="res://assets/sprout valley/objects/basic_plants.png" id="1_hm4is"]
@@ -6,9 +6,18 @@
 [ext_resource type="PackedScene" uid="uid://ja0w3fl732gi" path="res://scenes/objects/plants/watering_particles.tscn" id="2_ofjf8"]
 [ext_resource type="PackedScene" uid="uid://3hquxf0fpxsm" path="res://scenes/objects/plants/flowering_particles.tscn" id="3_ofjf8"]
 [ext_resource type="PackedScene" uid="uid://cput6ldn4aj3q" path="res://scenes/objects/plants/growth_cycle_component.tscn" id="5_q3ekf"]
+[ext_resource type="PackedScene" uid="uid://c1fx0c7w1k3p6" path="res://scenes/components/save_data_component.tscn" id="7_q3ekf"]
+[ext_resource type="Script" uid="uid://bltn2o0renh3b" path="res://resources/node_data_resource.gd" id="8_310os"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5ucl7"]
 size = Vector2(13, 8)
+
+[sub_resource type="Resource" id="Resource_g345r"]
+script = ExtResource("8_310os")
+global_position = Vector2(0, 0)
+node_path = NodePath("")
+parent_node_path = NodePath("")
+metadata/_custom_type_script = "uid://bltn2o0renh3b"
 
 [node name="Corn" type="Node2D"]
 y_sort_enabled = true
@@ -34,3 +43,6 @@ tool = 3
 [node name="CollisionShape2D" type="CollisionShape2D" parent="HurtComponent"]
 position = Vector2(-0.5, 3)
 shape = SubResource("RectangleShape2D_5ucl7")
+
+[node name="SaveDataComponent" parent="." instance=ExtResource("7_q3ekf")]
+save_data_resource = SubResource("Resource_g345r")

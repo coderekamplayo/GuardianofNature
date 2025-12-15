@@ -5,9 +5,9 @@
 [ext_resource type="PackedScene" uid="uid://xpxdx2hve2bu" path="res://scenes/characters/chicken/chicken.tscn" id="2_a4sac"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_6nbhr"]
-vertices = PackedVector2Array(430.109, 153.609, 448.703, 226.211, 395.969, 268.211, 359.109, 282.25, 272.523, 247.078, 268, 183.781, 268.898, 120.563, 348.352, 85.6328)
+vertices = PackedVector2Array(376.906, 180.672, 398.789, 217.703, 386.648, 245.789, 358.242, 254.469, 300.727, 234.117, 284.844, 191.453, 297.508, 164.617, 338.961, 162.133)
 polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3, 4, 5, 6, 7)])
-outlines = Array[PackedVector2Array]([PackedVector2Array(259, 114, 350, 74, 439, 148, 460, 230, 401, 277, 359, 293, 263, 254, 258, 184)])
+outlines = Array[PackedVector2Array]([PackedVector2Array(291, 155, 341, 152, 384, 173, 410, 217, 394, 254, 358, 265, 293, 242, 274, 191)])
 
 [node name="TestSceneNPCChicken" type="Node2D"]
 y_sort_enabled = true
@@ -46,31 +46,16 @@ position = Vector2(185, 175)
 navigation_polygon = SubResource("NavigationPolygon_6nbhr")
 
 [node name="Chicken" parent="Chickens" instance=ExtResource("2_a4sac")]
-position = Vector2(294, 178)
+position = Vector2(317, 189)
 
 [node name="Chicken2" parent="Chickens" instance=ExtResource("2_a4sac")]
-position = Vector2(327, 153)
+position = Vector2(347, 185)
 
 [node name="Chicken3" parent="Chickens" instance=ExtResource("2_a4sac")]
-position = Vector2(350, 185)
+position = Vector2(337, 207)
 
 [node name="Chicken4" parent="Chickens" instance=ExtResource("2_a4sac")]
-position = Vector2(395, 189)
+position = Vector2(358, 220)
 
 [node name="Chicken5" parent="Chickens" instance=ExtResource("2_a4sac")]
 position = Vector2(314, 219)
-
-[node name="Chicken6" parent="Chickens" instance=ExtResource("2_a4sac")]
-position = Vector2(376, 220)
-
-[node name="Chicken7" parent="Chickens" instance=ExtResource("2_a4sac")]
-position = Vector2(407, 226)
-
-[node name="Chicken8" parent="Chickens" instance=ExtResource("2_a4sac")]
-position = Vector2(325, 244)
-
-[node name="Chicken9" parent="Chickens" instance=ExtResource("2_a4sac")]
-position = Vector2(359, 251)
-
-[node name="Chicken10" parent="Chickens" instance=ExtResource("2_a4sac")]
-position = Vector2(392, 254)

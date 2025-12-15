@@ -9,7 +9,7 @@ var corn_plant_scene = preload("res://scenes/objects/plants/corn.tscn")
 var tomato_plant_scene = preload("res://scenes/objects/plants/tomato.tscn")
 
 var mouse_position: Vector2
-var cell_position: Vector2i
+var cell_position: Vector2i 
 var cell_source_id: int
 var local_cell_position : Vector2
 var distance: float
