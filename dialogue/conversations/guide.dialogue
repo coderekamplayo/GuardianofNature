@@ -6,9 +6,9 @@ Derek: As you can see the cows and chicken are hungry.
 Derek: You need to grow some crops to feed them.
 Derek: Here are some seeds to grow some crops.
 - Take crop seeds
-	Teemo: Yeah I can grow crops.
+	Cindy: Yeah I can grow crops.
 	do GameDialogueManager.action_give_crop_seeds()
 - No, I don't want them
-	Teemo: I'm not ready to grow my farm yet.
+	Cindy: I'm not ready to grow my farm yet.
 
 => END

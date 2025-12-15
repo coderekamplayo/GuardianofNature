@@ -14,6 +14,10 @@ var cell_source_id: int
 var local_cell_position : Vector2
 var distance: float
 
+func _ready() -> void:
+	await get_tree().process_frame
+	player = get_tree().get_first_node_in_group("player")
+
 func _unhandled_input(event: InputEvent) -> void:
 	if event.is_action_pressed("remove_dirt"):
 		if ToolManager.selected_tool == DataTypes.Tools.TillGround:

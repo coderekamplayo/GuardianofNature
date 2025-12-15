@@ -27,7 +27,7 @@ func _unhandled_input(event: InputEvent) -> void:
 	if in_range: 
 		if event.is_action_pressed("show_dialogue"):
 			var ballon: BaseGameDialogueBalloon = ballon_scene.instantiate()
-			get_tree().current_scene.add_child(ballon)
+			get_tree().root.add_child(ballon)
 			ballon.start(load("res://dialogue/conversations/guide.dialogue"), "start")
 
 
