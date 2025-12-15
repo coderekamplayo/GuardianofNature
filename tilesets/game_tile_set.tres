@@ -1,15 +1,15 @@
 [gd_resource type="TileSet" load_steps=18 format=3 uid="uid://c7ul4t22rsin5"]
 
-[ext_resource type="Texture2D" uid="uid://dgejf1ace10xx" path="res://assets/sprout valley/tilesets/water.png" id="1_tjtrf"]
-[ext_resource type="Texture2D" uid="uid://bbe5hbrpypl6v" path="res://assets/sprout valley/tilesets/grass.png" id="2_tkbyn"]
-[ext_resource type="Texture2D" uid="uid://cyy3o0ki1o3op" path="res://assets/sprout valley/tilesets/tilled_dirt_wide.png" id="3_v1amf"]
-[ext_resource type="Texture2D" uid="uid://bk2j5ofok3sso" path="res://assets/sprout valley/objects/basic_grass_biom_things.png" id="4_7cqdy"]
+[ext_resource type="Texture2D" uid="uid://dgejf1ace10xx" path="res://assets/Gon Basic/tilesets/water.png" id="1_tjtrf"]
+[ext_resource type="Texture2D" uid="uid://bbe5hbrpypl6v" path="res://assets/Gon Basic/tilesets/grass.png" id="2_tkbyn"]
+[ext_resource type="Texture2D" uid="uid://cyy3o0ki1o3op" path="res://assets/Gon Basic/tilesets/tilled_dirt_wide.png" id="3_v1amf"]
+[ext_resource type="Texture2D" uid="uid://bk2j5ofok3sso" path="res://assets/Gon Basic/objects/basic_grass_biom_things.png" id="4_7cqdy"]
 [ext_resource type="PackedScene" uid="uid://bq5vry1mfv36a" path="res://scenes/houses/large_house.tscn" id="5_pudl8"]
 [ext_resource type="PackedScene" uid="uid://chcak5u18a6b6" path="res://scenes/objects/trees/small_tree.tscn" id="6_uk42g"]
 [ext_resource type="PackedScene" uid="uid://6nsfbnjv2x78" path="res://scenes/objects/trees/large_tree.tscn" id="7_yewih"]
 [ext_resource type="PackedScene" uid="uid://dvr6g01tqoplq" path="res://scenes/objects/rocks/rock.tscn" id="8_8yb5x"]
-[ext_resource type="Texture2D" uid="uid://djreqhcdegwvl" path="res://assets/sprout valley/tilesets/fences.png" id="9_xa2g7"]
-[ext_resource type="Texture2D" uid="uid://bmk82trvm7546" path="res://assets/sprout valley/tilesets/tilled_dirt_wide_cropfield.png" id="10_jutaf"]
+[ext_resource type="Texture2D" uid="uid://djreqhcdegwvl" path="res://assets/Gon Basic/tilesets/fences.png" id="9_xa2g7"]
+[ext_resource type="Texture2D" uid="uid://bmk82trvm7546" path="res://assets/Gon Basic/tilesets/tilled_dirt_wide_cropfield.png" id="10_jutaf"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tkbyn"]
 texture = ExtResource("1_tjtrf")

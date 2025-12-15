@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://ud3n2fijpj3" path="res://scenes/ui/game_menu_screen_background.tscn" id="1_arotu"]
 [ext_resource type="Script" uid="uid://bes8ow7u1i038" path="res://scenes/ui/game_menu_screen.gd" id="1_l5nq4"]
 [ext_resource type="PackedScene" uid="uid://df2uvnnrve332" path="res://scenes/components/mouse_cursor_component.tscn" id="2_vrg0q"]
-[ext_resource type="Texture2D" uid="uid://bop5k7mlb6dw4" path="res://assets/sprout valley/ui/mouse_icon.png" id="3_ecc0l"]
+[ext_resource type="Texture2D" path="res://assets/sprout valley/ui/mouse_icon.png" id="3_ecc0l"]
 
 [node name="GameMenuScreen" type="CanvasLayer"]
 script = ExtResource("1_l5nq4")

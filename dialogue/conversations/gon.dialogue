@@ -1,0 +1,24 @@
+~ start
+
+Gon: [[Greetings|Hello there|Welcome]], young Guardian.
+Gon: Look around you. The forest is quiet... too quiet. The ecosystem here is fragile.
+Gon: I need someone to explore the outer woods and help restore the natural balance.
+- I am ready to help!
+	Gon: That is what I wanted to hear! 
+	Gon: Your task is simple but important: Explore the area and identify what is harming the wildlife.
+	=> restoration_instructions
+- What exactly do I need to do?
+	Gon: It is a mission of conservation. 
+	Gon: You must explore the map to find areas where the habitat is degraded.
+	Gon: Once found, you must remove the pollution and plant new flora to bring the animals back.
+	=> restoration_instructions
+- Not right now. => END
+
+~ restoration_instructions
+
+Gon: Here, take these tools. 
+Gon: If you see any debris or withered plants, clear them out. 
+Gon: Once the land is clean, the soil will be ready for new life.
+Gon: Go now! Explore the valley and bring the forest back to life.
+
+=> END

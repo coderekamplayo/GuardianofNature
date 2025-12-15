@@ -1,6 +1,6 @@
 [gd_scene load_steps=21 format=3 uid="uid://d18k08ifnxq7m"]
 
-[ext_resource type="Texture2D" uid="uid://pf5yy4v01dah" path="res://assets/sprout valley/objects/chest.png" id="1_8pawo"]
+[ext_resource type="Texture2D" uid="uid://pf5yy4v01dah" path="res://assets/Gon Basic/objects/chest.png" id="1_8pawo"]
 [ext_resource type="Script" uid="uid://c3vy3pk2pvud8" path="res://scenes/objects/chest/chest.gd" id="1_umtkn"]
 [ext_resource type="PackedScene" uid="uid://5h773jh3ajo5" path="res://scenes/components/interactable_component.tscn" id="2_rqprm"]
 [ext_resource type="PackedScene" uid="uid://qdnnoa4c11c2" path="res://scenes/components/interactable_label_component.tscn" id="3_umtkn"]

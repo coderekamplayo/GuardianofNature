@@ -1,6 +1,6 @@
 [gd_resource type="Theme" load_steps=18 format=3 uid="uid://yo8r3ktwyp1t"]
 
-[ext_resource type="Texture2D" uid="uid://c5yt75yuaaqd0" path="res://assets/sprout valley/ui/basic_ui_sprites.png" id="1_duyj7"]
+[ext_resource type="Texture2D" uid="uid://c5yt75yuaaqd0" path="res://assets/Gon Basic/ui/basic_ui_sprites.png" id="1_duyj7"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_duyj7"]
 load_path = "res://.godot/imported/basic_ui_sprites.png-a3d88725ec110af279b653306dc9aeaf.ctex"

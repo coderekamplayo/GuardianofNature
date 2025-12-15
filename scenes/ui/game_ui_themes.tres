@@ -1,8 +1,8 @@
 [gd_resource type="Theme" load_steps=52 format=3 uid="uid://dd184u2q0d33x"]
 
-[ext_resource type="Texture2D" uid="uid://c5yt75yuaaqd0" path="res://assets/sprout valley/ui/basic_ui_sprites.png" id="1_45njn"]
-[ext_resource type="FontVariation" uid="uid://cp16no6w6t88a" path="res://assets/sprout valley/ui/fonts/zx_palm_variation.tres" id="2_635oi"]
-[ext_resource type="FontFile" uid="uid://cm7gjwffsdu8j" path="res://assets/sprout valley/ui/fonts/pixelFont-7-8x14-sproutLands.ttf" id="2_slsy2"]
+[ext_resource type="Texture2D" uid="uid://c5yt75yuaaqd0" path="res://assets/Gon Basic/ui/basic_ui_sprites.png" id="1_45njn"]
+[ext_resource type="FontVariation" uid="uid://cp16no6w6t88a" path="res://assets/Gon Basic/ui/fonts/zx_palm_variation.tres" id="2_635oi"]
+[ext_resource type="FontFile" uid="uid://cm7gjwffsdu8j" path="res://assets/Gon Basic/ui/fonts/pixelFont-7-8x14-sproutLands.ttf" id="2_slsy2"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_635oi"]
 atlas = ExtResource("1_45njn")

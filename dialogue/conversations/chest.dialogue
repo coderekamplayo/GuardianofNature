@@ -1,23 +1,34 @@
 ~ start_cow_pasture_box
 
-Pasture Box: [[Hi|Hello|Howdy]], your animals are hungry.
-Pasture Box: Would you like to feed your cows?
+Pasture Box: [[Hi|Hello|Howdy]], your cows are hungry.
+Pasture Box: Would you like to feed them some corn?
 - Yes
-	Cindy: Yeah! Let's feed my cows.
-	do GameDialogueManager.action_feed_animals()
+	if InventoryManager.has_item("corn"):
+		Cindy: Yeah! Here is some corn for the cows.
+		do GameDialogueManager.action_feed_animals()
+		Pasture Box: The cows are happily eating. They left some milk for you!
+	else:
+		Cindy: Oh no! I don't have any corn yet.
+		Pasture Box: Please plant some corn seeds and come back when they are grown.
 - No
-	Cindy: No, I don't need to feed them. I have enough milk.
+	Cindy: Not right now.
+	Pasture Box: Okay, the cows will be waiting.
 
 => END
 
 ~ start_chicken_pasture_box
 
-Pasture Box: [[Hi|Hello|Howdy]], your animals are hungry.
-Pasture Box: Would you like to feed your chickens?
+Pasture Box: [[Hi|Hello|Howdy]], your chickens are hungry.
+Pasture Box: Would you like to feed them some tomatoes?
 - Yes
-	Cindy: Yeah! Let's feed my chickens.
-	do GameDialogueManager.action_feed_animals()
+	if InventoryManager.has_item("tomato"):
+		Cindy: Here girls, have some fresh tomatoes!
+		do GameDialogueManager.action_feed_animals()
+		Pasture Box: The chickens are clucking happily. Look, they laid some eggs!
+	else:
+		Cindy: I don't have any tomatoes...
+		Pasture Box: The chickens look sad. Please grow some tomatoes for them.
 - No
-	Cindy: No, I don't need to feed them. I have enough milk.
+	Cindy: Maybe later.
 
 => END

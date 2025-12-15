@@ -1,7 +1,7 @@
 [gd_resource type="TileSet" load_steps=7 format=3 uid="uid://cwe57lb80s5cg"]
 
-[ext_resource type="Texture2D" uid="uid://dl0vpuvqrw761" path="res://assets/sprout valley/tilesets/wooden_house_walls.png" id="1_uaqb7"]
-[ext_resource type="Texture2D" uid="uid://c4kt4dcfjl7yb" path="res://assets/sprout valley/objects/basic_furniture.png" id="2_yxgbh"]
+[ext_resource type="Texture2D" uid="uid://dl0vpuvqrw761" path="res://assets/Gon Basic/tilesets/wooden_house_walls.png" id="1_uaqb7"]
+[ext_resource type="Texture2D" uid="uid://c4kt4dcfjl7yb" path="res://assets/Gon Basic/objects/basic_furniture.png" id="2_yxgbh"]
 [ext_resource type="PackedScene" uid="uid://2v6dmau4gcpl" path="res://scenes/houses/door.tscn" id="3_c4aqv"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_yxgbh"]

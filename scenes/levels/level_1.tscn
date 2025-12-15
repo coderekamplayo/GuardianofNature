@@ -1,5 +1,6 @@
-[gd_scene load_steps=18 format=4 uid="uid://teegxmque62b"]
+[gd_scene load_steps=20 format=4 uid="uid://teegxmque62b"]
 
+[ext_resource type="PackedScene" uid="uid://coe5ffyqm36md" path="res://audio/music/on_the_farm_music.tscn" id="1_bahl2"]
 [ext_resource type="TileSet" uid="uid://c7ul4t22rsin5" path="res://tilesets/game_tile_set.tres" id="1_ksju7"]
 [ext_resource type="PackedScene" uid="uid://brl452vgwh8sh" path="res://scenes/components/save_level_data_component.tscn" id="1_wtwp4"]
 [ext_resource type="PackedScene" uid="uid://bq5vry1mfv36a" path="res://scenes/houses/large_house.tscn" id="2_6iamk"]
@@ -12,6 +13,7 @@
 [ext_resource type="Script" uid="uid://bg3to3ckdkefh" path="res://scenes/components/field_cursor_component.gd" id="5_qxy0u"]
 [ext_resource type="PackedScene" uid="uid://clf8ugwjbssbn" path="res://scenes/components/crops_cursor_component.tscn" id="6_excbq"]
 [ext_resource type="Script" uid="uid://ceualrb1jv521" path="res://scenes/components/crops_cursor_component.gd" id="7_iav0o"]
+[ext_resource type="PackedScene" uid="uid://cg2ly3pnvny0u" path="res://scenes/characters/gon/gon.tscn" id="7_iwr0g"]
 [ext_resource type="PackedScene" uid="uid://d18k08ifnxq7m" path="res://scenes/objects/chest/chest.tscn" id="10_iav0o"]
 [ext_resource type="PackedScene" uid="uid://bi8c5up8bhv1q" path="res://scenes/objects/milk.tscn" id="11_dnkej"]
 [ext_resource type="PackedScene" uid="uid://b6slkprix0l0q" path="res://scenes/objects/egg.tscn" id="12_mm8aj"]
@@ -28,6 +30,8 @@ outlines = Array[PackedVector2Array]([PackedVector2Array(421, 155, 467, 153, 511
 
 [node name="Level1" type="Node2D"]
 y_sort_enabled = true
+
+[node name="OnTheFarmMusic" parent="." instance=ExtResource("1_bahl2")]
 
 [node name="SaveLevelDataComponent" parent="." instance=ExtResource("1_wtwp4")]
 
@@ -70,6 +74,9 @@ position = Vector2(647, 196)
 
 [node name="Guide" parent="GameTileMap" instance=ExtResource("3_6761a")]
 position = Vector2(724, 226)
+
+[node name="Gon" parent="GameTileMap" instance=ExtResource("7_iwr0g")]
+position = Vector2(360, 188)
 
 [node name="CropFields" type="Node2D" parent="."]
 

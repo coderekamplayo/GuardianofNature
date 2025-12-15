@@ -4,6 +4,11 @@ var inventory: Dictionary = Dictionary()
 
 signal inventory_changed 
 
+func has_item(item_name: String) -> bool:
+	if inventory.has(item_name):
+		return inventory[item_name] > 0
+	return false
+
 func add_collectable(collectable_name: String) -> void:
 	inventory.get_or_add(collectable_name)
 	

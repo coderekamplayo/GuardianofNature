@@ -1,14 +1,22 @@
 ~ start
 
-Derek: [[Hi|Hello|Howdy]], nice to meet you.
-Derek: Welcome to your new world.
-Derek: As you can see the cows and chicken are hungry.
-Derek: You need to grow some crops to feed them.
-Derek: Here are some seeds to grow some crops.
-- Take crop seeds
-	Cindy: Yeah I can grow crops.
+Derek: [[Hi|Hello|Howdy]], welcome to Sprout Valley.
+Derek: It is beautiful here, isn't it? But the land outside the valley is struggling with the changing climate.
+Derek: We are trying to build a sanctuary here. A place where nature and people work together.
+Derek: To do that, we need to restore the **Biodiversity**. Do you know what that means?
+- Yes, nature needs variety!
+	Cindy: It means we need a mix of different plants and animals, right?
+	Derek: Exactly! Monocultures—growing just one thing—hurt the soil. A healthy ecosystem needs variety to survive.
+- I'm not sure.
+	Derek: It means having many different kinds of life. If we only plant one crop, the land gets sick. We need trees, flowers, and crops together.
+
+Derek: I have some organic seeds here. They help pull carbon from the air and heal the soil.
+- Take eco-seeds
+	Cindy: I'm ready to help heal the land.
 	do GameDialogueManager.action_give_crop_seeds()
+	Derek: Wonderful. Remember, every tree you plant cools the earth a little bit more. Good luck, Guardian!
 - No, I don't want them
-	Cindy: I'm not ready to grow my farm yet.
+	Cindy: I'm not ready to take on that responsibility yet.
+	Derek: I understand. The climate waits for no one, though. Come back when you are ready to make a difference.
 
 => END
