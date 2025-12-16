@@ -12,7 +12,7 @@ config_version=5
 
 config/name="Sprout Valley Lands GoN"
 run/main_scene="uid://u6o28utv80bh"
-config/features=PackedStringArray("4.4", "Forward Plus")
+config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://icon.svg"
 run/layer_8="Food"
 
@@ -47,7 +47,7 @@ project/assembly_name="Sprout Valley Lands GoN"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/copilot/plugin.cfg", "res://addons/dialogue_manager/plugin.cfg")
+enabled=PackedStringArray("res://addons/dialogue_manager/plugin.cfg", "res://addons/ui_design_tool/plugin.cfg")
 
 [file_customization]
 

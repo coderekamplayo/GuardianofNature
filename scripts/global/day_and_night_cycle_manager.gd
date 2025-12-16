@@ -19,6 +19,18 @@ signal time_tick(day: int, hour: int, minute: int)
 signal time_tick_day(day: int)
 
 func _ready() -> void:
+	# Ensure this script stops running when the pause menu is open
+	process_mode = Node.PROCESS_MODE_PAUSABLE
+	
+	# --- NEW SAVE LOGIC ---
+	# We dynamically create the saver and attach it to this global manager.
+	# We use TimeSaveDataComponent because standard SaveDataComponent requires Node2D parent (and this is a Node).
+	var time_save_component = TimeSaveDataComponent.new()
+	# The component self-registers to "save_data_component" group in its _ready()
+	add_child(time_save_component)
+	# ----------------------
+	# ----------------------
+	
 	set_initial_time()
 
 func _process(delta: float) -> void:
@@ -47,9 +59,3 @@ func recalculate_time() -> void:
 	if current_day != day:
 		current_day = day
 		time_tick_day.emit(day)
-	
-	
-	
-	
-	
-	

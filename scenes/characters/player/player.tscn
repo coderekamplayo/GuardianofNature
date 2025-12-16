@@ -1,8 +1,8 @@
 [gd_scene load_steps=54 format=3 uid="uid://b82jnpj0lc424"]
 
 [ext_resource type="Script" uid="uid://lyeoctroqesn" path="res://scenes/characters/player/player.gd" id="1_6avc5"]
-[ext_resource type="Texture2D" uid="uid://dwx6cx2cu75o4" path="res://assets/sprout valley/characters/basic_character_sprites.png" id="1_7uws0"]
-[ext_resource type="Texture2D" uid="uid://8h0ffg7wsf3m" path="res://assets/sprout valley/characters/character_sprites.png" id="2_t61fv"]
+[ext_resource type="Texture2D" uid="uid://dwx6cx2cu75o4" path="res://assets/Gon Basic/characters/basic_character_sprites.png" id="1_7uws0"]
+[ext_resource type="Texture2D" uid="uid://8h0ffg7wsf3m" path="res://assets/Gon Basic/characters/character_sprites.png" id="2_t61fv"]
 [ext_resource type="Script" uid="uid://clgac0dyjyfcc" path="res://scenes/characters/player/idle_state.gd" id="3_686vu"]
 [ext_resource type="Script" uid="uid://ru3lyd05ydyh" path="res://scripts/state_machine/node_state_machine.gd" id="3_hss88"]
 [ext_resource type="Script" uid="uid://bs7h210kw3qs0" path="res://scenes/characters/player/walk_state.gd" id="5_qd3e3"]

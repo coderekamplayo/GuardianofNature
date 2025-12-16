@@ -3,7 +3,7 @@
 Derek: [[Hi|Hello|Howdy]], welcome to Sprout Valley.
 Derek: It is beautiful here, isn't it? But the land outside the valley is struggling with the changing climate.
 Derek: We are trying to build a sanctuary here. A place where nature and people work together.
-Derek: To do that, we need to restore the **Biodiversity**. Do you know what that means?
+Derek: To do that, we need to restore the Biodiversity. Do you know what that means?
 - Yes, nature needs variety!
 	Cindy: It means we need a mix of different plants and animals, right?
 	Derek: Exactly! Monocultures—growing just one thing—hurt the soil. A healthy ecosystem needs variety to survive.
@@ -14,9 +14,32 @@ Derek: I have some organic seeds here. They help pull carbon from the air and he
 - Take eco-seeds
 	Cindy: I'm ready to help heal the land.
 	do GameDialogueManager.action_give_crop_seeds()
-	Derek: Wonderful. Remember, every tree you plant cools the earth a little bit more. Good luck, Guardian!
+	Derek: Wonderful. Remember, every crop you plant cools the earth a little bit more.
+	=> rate_experience
 - No, I don't want them
 	Cindy: I'm not ready to take on that responsibility yet.
-	Derek: I understand. The climate waits for no one, though. Come back when you are ready to make a difference.
+	Derek: I understand. The climate waits for no one, though. Come back when you are ready.
+	=> rate_experience
 
+~ rate_experience
+
+Derek: Before you head out, I have a quick request. We are constantly trying to improve the experience for our Guardians.
+Derek: How are you enjoying your time in Sprout Valley so far?
+- It's amazing! I love it.
+	Cindy: It's really wonderful, Derek!
+	Derek: That makes me so happy to hear!
+	# Save "Amazing" to the file
+	do GameDialogueManager.action_save_rating("Amazing")
+- It's pretty good.
+	Cindy: It's fun, but there is room for improvement.
+	Derek: I appreciate the honesty. We will keep working hard to make it even better.
+	# Save "Good" to the file
+	do GameDialogueManager.action_save_rating("Good")
+- It's not for me.
+	Cindy: I'm not really enjoying it.
+	Derek: I'm sorry to hear that. Thank you for giving it a try, though.
+	# Save "Bad" to the file
+	do GameDialogueManager.action_save_rating("Bad")
+
+Derek: Good luck out there, Guardian!
 => END

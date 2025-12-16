@@ -16,9 +16,22 @@ func on_hurt(hit_damage: int) -> void:
 	material.set_shader_parameter("shake_intensity",0.0)
 
 func on_max_damage_reached() -> void:
-	call_deferred("add_log_scene")
-	print("max damage reached")
+	call_deferred("spawn_drop")
+	
+	# [NEW] Notify the Save System that this object is gone
+	var level_manager = get_tree().get_first_node_in_group("save_level_data_component")
+	if level_manager != null:
+		# We pass 'self' (the tree node), NOT the damage component
+		level_manager.on_object_destroyed(self)
+	
+	# Now it is safe to delete
 	queue_free()
+
+func spawn_drop() -> void:
+	var drop_instance = log_scene.instantiate() as Node2D
+	# Set position BEFORE adding to tree
+	drop_instance.global_position = global_position 
+	get_parent().call_deferred("add_child", drop_instance)
 
 func add_log_scene() -> void:
 	var log_instance = log_scene.instantiate() as Node2D

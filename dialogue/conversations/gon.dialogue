@@ -16,7 +16,8 @@ Gon: I need someone to explore the outer woods and help restore the natural bala
 
 ~ restoration_instructions
 
-Gon: Here, take these tools. 
+Gon: Here, take these tools.
+do GameDialogueManager.action_give_axe_tool()
 Gon: If you see any debris or withered plants, clear them out. 
 Gon: Once the land is clean, the soil will be ready for new life.
 Gon: Go now! Explore the valley and bring the forest back to life.

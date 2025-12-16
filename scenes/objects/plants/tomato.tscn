@@ -1,23 +1,20 @@
 [gd_scene load_steps=11 format=3 uid="uid://dfap3gdckgdbt"]
 
 [ext_resource type="Script" uid="uid://b4llagn6lu03p" path="res://scenes/objects/plants/tomato.gd" id="1_i4hd5"]
-[ext_resource type="Texture2D" uid="uid://bugjlbn0v4ik4" path="res://assets/sprout valley/objects/basic_plants.png" id="2_huvgt"]
+[ext_resource type="Texture2D" uid="uid://bugjlbn0v4ik4" path="res://assets/Gon Basic/objects/basic_plants.png" id="2_huvgt"]
 [ext_resource type="PackedScene" uid="uid://ja0w3fl732gi" path="res://scenes/objects/plants/watering_particles.tscn" id="3_83wcf"]
 [ext_resource type="PackedScene" uid="uid://3hquxf0fpxsm" path="res://scenes/objects/plants/flowering_particles.tscn" id="4_wpajg"]
 [ext_resource type="PackedScene" uid="uid://cput6ldn4aj3q" path="res://scenes/objects/plants/growth_cycle_component.tscn" id="5_aborc"]
 [ext_resource type="PackedScene" uid="uid://cxjm6et5hmqwu" path="res://scenes/components/hurt_component.tscn" id="6_8gvmx"]
 [ext_resource type="PackedScene" uid="uid://c1fx0c7w1k3p6" path="res://scenes/components/save_data_component.tscn" id="7_83wcf"]
-[ext_resource type="Script" uid="uid://bltn2o0renh3b" path="res://resources/node_data_resource.gd" id="8_83wcf"]
+[ext_resource type="Script" uid="uid://b6bxdm73qndmi" path="res://resources/crop_data_resource.gd" id="8_83wcf"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wu140"]
 size = Vector2(11, 7)
 
 [sub_resource type="Resource" id="Resource_wpajg"]
 script = ExtResource("8_83wcf")
-global_position = Vector2(0, 0)
-node_path = NodePath("")
-parent_node_path = NodePath("")
-metadata/_custom_type_script = "uid://bltn2o0renh3b"
+metadata/_custom_type_script = "uid://b6bxdm73qndmi"
 
 [node name="Tomato" type="Node2D"]
 script = ExtResource("1_i4hd5")

@@ -10,4 +10,4 @@ func apply_damage(damage: int) -> void:
 	current_damage = clamp(current_damage + damage, 0, max_damage)
 	
 	if current_damage == max_damage:
-		max_damaged_reached.emit()
+		max_damaged_reached.emit(	)

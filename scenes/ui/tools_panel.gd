@@ -9,6 +9,10 @@ extends PanelContainer
 func _ready() -> void:
 	ToolManager.enable_tool.connect(on_enable_tool_button)
 	
+	# [CHANGE 1] Disable the Axe by default
+	tool_axe.disabled = true
+	tool_axe.focus_mode = Control.FOCUS_NONE
+	
 	tool_tilling.disabled = true
 	tool_tilling.focus_mode = Control.FOCUS_NONE
 	
@@ -22,7 +26,7 @@ func _ready() -> void:
 	tool_tomato.focus_mode = Control.FOCUS_NONE
 
 func _on_tool_axe_pressed() -> void:
-	ToolManager.select_tool(DataTypes.Tools.AxeWood) # Replace with function body.
+	ToolManager.select_tool(DataTypes.Tools.AxeWood)
 
 func _on_tool_tilling_pressed() -> void:
 	ToolManager.select_tool(DataTypes.Tools.TillGround)
@@ -46,9 +50,13 @@ func _unhandled_input(event: InputEvent) -> void:
 			tool_corn.release_focus()
 			tool_tomato.release_focus()
 
-
 func on_enable_tool_button(tool: DataTypes.Tools) -> void:
-	if tool == DataTypes.Tools.TillGround:
+	# [CHANGE 2] Add logic to enable the Axe
+	if tool == DataTypes.Tools.AxeWood:
+		tool_axe.disabled = false
+		tool_axe.focus_mode = Control.FOCUS_ALL
+		
+	elif tool == DataTypes.Tools.TillGround:
 		tool_tilling.disabled = false
 		tool_tilling.focus_mode = Control.FOCUS_ALL
 	elif tool == DataTypes.Tools.WaterCrops:
