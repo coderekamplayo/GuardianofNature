@@ -1,6 +1,7 @@
 extends Node
 
 var allow_save_game: bool
+var should_load_on_level_start: bool = false
 
 func _ready() -> void:
 	process_mode = Node.PROCESS_MODE_ALWAYS
@@ -27,3 +28,5 @@ func load_game() -> void:
 	
 	if save_level_data_component != null:
 		save_level_data_component.load_game()
+	else:
+		print("Load failed: No active level found to load data into.")

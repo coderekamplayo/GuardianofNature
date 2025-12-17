@@ -12,6 +12,13 @@ var current_removed_paths: Array[String] = []
 func _ready() -> void:
 	add_to_group("save_level_data_component")
 	level_scene_name = get_parent().name
+	
+	# [FIX] Check if the player clicked "Load" from the main menu
+	if SaveGameManager.should_load_on_level_start:
+		print("Loading save from Main Menu request...")
+		SaveGameManager.should_load_on_level_start = false # Reset the flag
+		# Use call_deferred to wait 1 frame, ensuring all nodes (Player, Chests) are ready
+		call_deferred("load_game")
 
 # [NEW] Call this function from trees/rocks before queue_free()
 func on_object_destroyed(node: Node) -> void:
@@ -36,10 +43,21 @@ func save_node_data() -> void:
 					game_data_resource.save_data_nodes.append(save_final_resource)
 
 func save_game() -> void:
-	# ... (Keep existing directory creation logic) ...
+	# [FIX] 1. Create the directory if it doesn't exist
+	# FileAccess cannot write to a folder that isn't there!
+	if not DirAccess.dir_exists_absolute(save_game_data_path):
+		DirAccess.make_dir_recursive_absolute(save_game_data_path)
+	
 	var level_save_file_name: String = save_file_name % level_scene_name
 	save_node_data()
-	ResourceSaver.save(game_data_resource, save_game_data_path + level_save_file_name)
+	
+	# [FIX] 2. Save and print the result for debugging
+	var result = ResourceSaver.save(game_data_resource, save_game_data_path + level_save_file_name)
+	
+	if result == OK:
+		print("SUCCESS: Game saved to " + save_game_data_path + level_save_file_name)
+	else:
+		print("ERROR: Failed to save game! Error code: ", result)
 
 func load_game() -> void:
 	var level_save_file_name: String = save_file_name % level_scene_name
@@ -48,11 +66,15 @@ func load_game() -> void:
 	if !FileAccess.file_exists(save_game_path):
 		return
 	
-	game_data_resource = ResourceLoader.load(save_game_path)
+	# [FIX] Add CACHE_MODE_REPLACE (value 2) as the 3rd argument.
+	# This forces Godot to re-read the file from disk instead of using the cached version.
+	game_data_resource = ResourceLoader.load(save_game_path, "", ResourceLoader.CACHE_MODE_REPLACE)
+	
 	if game_data_resource == null: return
 	
 	var root_node: Window = get_tree().root
-	
+	# ... (rest of the function)
+
 	# [NEW] Delete objects that were destroyed in the save file
 	current_removed_paths = game_data_resource.removed_node_paths
 	for node_path_string in current_removed_paths:

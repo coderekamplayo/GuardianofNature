@@ -30,8 +30,12 @@ func _ready() -> void:
 	set_initial_time()
 
 func _process(delta: float) -> void:
+	if get_tree().paused:
+		return
+
 	time += delta * game_speed * GAME_MINUTE_DURATION
 	game_time.emit(time)
+
 	recalculate_time()
 
 func set_initial_time() -> void:
