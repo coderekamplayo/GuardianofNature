@@ -18,6 +18,6 @@ func _on_exit_game_button_pressed() -> void:
 	GameManager.exit_game()
 
 func _on_load_game_button_pressed() -> void:
-	get_tree().paused = false
-	SaveGameManager.load_game()
+	SaveGameManager.load_game()  # Load FIRST while game is still paused
+	get_tree().paused = false     # THEN unpause after data is loaded
 	queue_free()

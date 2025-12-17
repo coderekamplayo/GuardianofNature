@@ -22,11 +22,10 @@ extends CanvasModulate
 @export var day_night_gradient_texture: GradientTexture1D
 
 func _ready() -> void:
-	# --- ADDED: Dynamic Save Component for Time ---
-	var save_data_component = SaveDataComponent.new()
-	save_data_component.save_data_resource = GameTimeDataResource.new()
-	add_child(save_data_component)
-	# ----------------------------------------------
+	# REMOVE THIS BLOCK - The manager handles its own saving
+	# var save_data_component = SaveDataComponent.new()
+	# save_data_component.save_data_resource = GameTimeDataResource.new()
+	# add_child(save_data_component)
 	
 	DayAndNightCycleManager.initial_day = initial_day
 	DayAndNightCycleManager.initial_hour = initial_hour

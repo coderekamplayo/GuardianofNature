@@ -1,6 +1,6 @@
 [gd_scene load_steps=10 format=3 uid="uid://dvr6g01tqoplq"]
 
-[ext_resource type="Texture2D" uid="uid://bk2j5ofok3sso" path="res://assets/sprout valley/objects/basic_grass_biom_things.png" id="1_70ahf"]
+[ext_resource type="Texture2D" uid="uid://bk2j5ofok3sso" path="res://assets/Gon Basic/objects/basic_grass_biom_things.png" id="1_70ahf"]
 [ext_resource type="Shader" uid="uid://c3firj7lnfnp8" path="res://scenes/objects/shake.gdshader" id="1_bntui"]
 [ext_resource type="Script" uid="uid://d0m0ltdwdel5q" path="res://scenes/objects/rocks/rock.gd" id="2_f5itc"]
 [ext_resource type="PackedScene" uid="uid://cxjm6et5hmqwu" path="res://scenes/components/hurt_component.tscn" id="2_msy0l"]

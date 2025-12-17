@@ -27,10 +27,9 @@ func save_node_data() -> void:
 	game_data_resource.removed_node_paths = current_removed_paths
 	
 	if nodes != null:
-		for node: Node in nodes:
-			# (Keep your existing logic for saving living nodes here)
-			# Add safety check if node.get_parent() is null (just in case)
-			if is_instance_valid(node.get_parent()):
+		for node in nodes:
+			# Check if node has save_data method (supports both SaveDataComponent and TimeSaveDataComponent)
+			if node.has_method("save_data"):
 				var save_data_resource: NodeDataResource = node.save_data()
 				if save_data_resource:
 					var save_final_resource = save_data_resource.duplicate()
